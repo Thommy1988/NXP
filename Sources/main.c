@@ -117,8 +117,6 @@ int main(void)
 
     DEV_ASSERT(adConv1_ChnConfig0.channel == ADC_CHN);
 
-    ADC_DRV_ConfigConverter(ADC_INSTANCE, &adConv1_ConvConfig0);
-    ADC_DRV_AutoCalibration(ADC_INSTANCE);
 
     /* Send a welcome message via LPUART */
     print(welcomeStr);

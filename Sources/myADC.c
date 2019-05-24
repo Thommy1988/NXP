@@ -27,6 +27,8 @@ uint16_t getADC_max(){
 
 
 void myADC_init(void){
+    ADC_DRV_ConfigConverter(ADC_INSTANCE, &adConv1_ConvConfig0);
+    ADC_DRV_AutoCalibration(ADC_INSTANCE);
 
 
 }
