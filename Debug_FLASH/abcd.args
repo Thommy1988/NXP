@@ -1,6 +1,5 @@
 "./Sources/myUART.o"
 "./Sources/myADC.o"
-"./Sources/main.o"
 "./Sources/helper_functions.o"
 "./SDK/rtos/osif/osif_baremetal.o"
 "./SDK/platform/drivers/src/pins/pins_port_hw_access.o"

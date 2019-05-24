@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 25
+#Progress monitor hint: 24
 first : all
 -include ../makefile.init
 
@@ -63,14 +63,14 @@ all: warning-messages explicit-dependencies abcd.elf secondary-outputs
 # Tool invocations
 abcd.elf: $(OBJS) C:/NXP/S32DS_ARM_v2018.R1/S32DS/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K142/linker/gcc/S32K142_32_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #26 $@'
+	@echo 'Executing target #25 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "abcd.elf" "@abcd.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 abcd.siz: $(EXECUTABLES)
-	@echo 'Executing target #27 $@'
+	@echo 'Executing target #26 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
