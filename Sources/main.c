@@ -55,7 +55,7 @@ volatile int exit_code = 0;
     #define ADC_VREFL       0.0f
 #endif
 
-#define welcomeStr "This is an Serial message test, \r it shows that the microcontroller is booting and comminucation working.\r\n"
+#define welcomeStr "This is an aSerial message test, \r\n it shows that the microcontroller is booting and comminucation working.\r\n"
 #define headerStr  "ADC result: "
 
 
@@ -76,10 +76,8 @@ int main(void)
     uint16_t adcRawValue;
     uint16_t adcMax;
     float adcValue;
-ssg
     /* Buffer used to store processed data for serial communication */
-    char msg[255] =
-    { 0, };
+    char msg[255] = { 0, };
 
     /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 #ifdef PEX_RTOS_INIT
